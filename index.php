@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 require "vendor/autoload.php";
 
@@ -14,6 +14,13 @@ $router->addRoute('/vehicule/read', 'VehiculeController', 'read');
 $router->addRoute('/vehicule/create', 'VehiculeController', 'create');
 $router->addRoute('/vehicule/update', 'VehiculeController', 'update');
 $router->addRoute('/vehicule/delete', 'VehiculeController', 'delete');
+$router->addRoute('/user', 'UserController', 'index');
+$router->addRoute('/user/read', 'UserController', 'read');
+$router->addRoute('/user/create', 'UserController', 'create');
+$router->addRoute('/user/update', 'UserController', 'update');
+$router->addRoute('/user/delete', 'UserController', 'delete');
+
+
 
 
 // la methode handleRequest permet de gerer la requete (elle parcours le tableau des routes et instancie la classe

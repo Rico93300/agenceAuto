@@ -31,15 +31,16 @@ https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/lux/bootstrap.min.css" integr
                         <a class="nav-link" href="/vehicule/create">vehicule create</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/vehicule">vehicule home</a>
+                        <a class="nav-link" href="/vehicule">vehicule home</a>        
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/vehicule/read">vehicule read</a>
+                        <a class="nav-link" href="/user">user home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/vehicule/update">vehicule update</a>
+                        <a class="nav-link" href="/user/create">user create</a>
                     </li>
-
+                    
+                  
 
 
 

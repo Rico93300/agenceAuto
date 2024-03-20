@@ -1,4 +1,5 @@
-<?php 
+<?php
+
 namespace App\Utils;
 
 abstract class AbstractController
@@ -6,9 +7,7 @@ abstract class AbstractController
     public function redirectToRoute($route)
     {
         http_response_code(303);
-        header("location : {$route}");
+        header("Location: {$route}");
         exit;
     }
 }
-
-?>

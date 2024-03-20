@@ -113,7 +113,7 @@ class Vehicule
         $pdo = Db::getConnection();
         $sql = 'UPDATE vehicule SET marque = ?,modele = ? ,annee = ? WHERE id = ?';
         $statement = $pdo->prepare($sql);
-        $statement->execute([$this->id, $this->marque, $this->modele, $this->annee]);
+        $statement->execute([$this->marque, $this->modele, $this->annee,$this->id]);
     }
     static function delete($id): void
     {
@@ -142,6 +142,7 @@ class Vehicule
         $statement = $pdo->prepare($sql);
         $statement->execute();
         $dbvehicules = $statement->fetchAll(PDO::FETCH_ASSOC);
+        $vehicule=[];
         foreach ($dbvehicules as $row) {
             $vehicule = new Vehicule($row['id'], $row['marque'], $row['modele'], $row['annee']);
             $vehicules[] = $vehicule;
